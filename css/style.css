@@ -9,6 +9,11 @@
     font-display: swap;
 }
 
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
 
 *{
     box-sizing: border-box;
@@ -54,6 +59,7 @@ button{
     height: 65px;
     background: #34547A;
     color:#ffffff;
+    border: none;
 }
 .description{
     font-family: Roboto;
@@ -77,10 +83,9 @@ button{
 /* header */
 .header{
     background: #EEEFF1;
-    
-}
-.header__container{
     padding-top: 57px;
+}
+.header__container{ 
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -88,11 +93,10 @@ button{
 }
 .header__list{
     display: flex;
-    white-space: nowrap;
     column-gap: 40px;
     
 }
-.header__bottom{
+/* .header__bottom{
     display: flex;
     flex-wrap: nowrap;
     justify-content: space-around;
@@ -107,16 +111,38 @@ button{
     flex-direction: column;
     justify-content: space-between;
     padding-left: 130px;
+} */
+.hero{
+    background: #EEEFF1;
+    padding-top: 120px;
 }
-.about__me{
+.hero_item{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+.hero__title, .hero__description{
+    margin-bottom: 60px;
+}
+.hero__design{
+    padding-left: 40px;
+}
+.hero__btn{
+    margin-bottom: 146px;
+}
+.about__me-item{
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     align-items: center;
-    padding: 119px 0 217px;
 }
 .about__me-title{
-    padding-bottom: 50px;
+    margin-top: 119px;
+    margin-bottom: 50px;
+}
+.about__me-description{
+   margin-bottom: 100px;
+
 }
 .about__me-description{
     max-width:540px;
@@ -135,8 +161,11 @@ button{
     width: 100%;
     height: 50px;
     padding-left: 70px;
-    padding: 100px 0 auto 100px;
+    
 
+}
+.proects__title{
+    margin-bottom: 10px;
 }
 .proects__list{
     display: flex;
@@ -146,7 +175,8 @@ button{
 }
 /* accent */
 .accent__b{
-    width: 445px;
+    max-width: 445px;
+    width: 100%;
     height: 4px;
     background: #C4C4C4;
 }
@@ -154,8 +184,12 @@ button{
     max-width: 445px;
     width: 100%;
 }
+.accent__description{
+    margin-bottom: 10px;
+}
 .accent__sm{
-    width: 350px;
+    max-width: 350px;
+    width: 75%;
     height: 4px;
     background: #34547A;
     transform: rotate(-0.06deg);
@@ -168,27 +202,80 @@ button{
 .accent__face{
     max-width: 555px;
     width: 100%;
+    margin: 30px;
 }
 .skills{
-    padding-top: 102px;
     display: flex;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     justify-content: space-around;
+    padding: 100px 0 100px ;
 }
 .skills__item{
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
     row-gap: 60px;
     justify-content: center;
 }
 /* work */
-.work{
+.work-container{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
     background: #EEEFF1;
     padding:100px 0 100px;
-    row-gap: 50px;
+
+}
+.work__title{
+    margin-bottom: 50px;
+}
+.work__description{
+    margin-bottom: 57px;
+}
+.work__description{
+    margin-bottom: 100px;
+    max-width: 1100px;
+    width: 100%;
+}
+/* foto */
+.foto__item-paper{
+    background-image: url(../images/Rectangle.png);
+    background-size: cover;
+    width: 480px;
+    height: 480px;
+}
+.foto__item-mac{
+    background-image: url(../images/Rectanglebook.png);
+    background-size: cover;
+    width: 480px;
+    height: 480px;
+}
+.foto-paper-mac{
+    display: flex;
+    
+}
+.foto-paper-mac-bottom{
+    display: flex;
+    
+}
+.foto-paper-mac{
+    display: flex;
+}
+.foto__item-paper:hover{
+    background: linear-gradient(0deg, rgba(52, 84, 122, 0.8), rgba(52, 84, 122, 0.8)), url(../images/Rectangle.png), url(../images/view.png);
+    background-size: cover;
+}
+.foto__item-mac:hover{
+    background: linear-gradient(0deg, rgba(52, 84, 122, 0.8), rgba(52, 84, 122, 0.8)), url(../images/Rectanglebook.png), url(../images/view.png);
+    background-size: cover;
+}
+.foto-paper-mac-bottom{
+    display: flex;
+    margin-top: 0;
+}
+.microsoft{
+   display: flex;
+   justify-content: space-around;
+    align-items: center;
 }
