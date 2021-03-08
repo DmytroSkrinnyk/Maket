@@ -106,6 +106,10 @@ button{
     padding: 7px;
     transition: .5s;
 }
+.header__img{
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
 /* .header__bottom{
     display: flex;
     flex-wrap: nowrap;
@@ -128,6 +132,7 @@ button{
 }
 .hero_item{
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
 
@@ -136,8 +141,23 @@ button{
     margin-bottom: 60px;
     text-align: start;
 }
+.hero__description{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 26px;
+    color: #727272;
+    max-width: 540px;
+    width: 100%;
+}
 .hero__design{
     padding-left: 40px;
+    display: flex;
+    flex-direction: column;
+}
+.hero__mac__item-link{
+    padding: 15px;
 }
 .hero__btn{
     margin-bottom: 146px;
@@ -147,12 +167,17 @@ button{
     border: transparent;
     transition: .5s;
 }
+/* about */
+
 .about__me-item{
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 .about__me-title{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
     margin-top: 119px;
     margin-bottom: 50px;
 }
@@ -172,10 +197,11 @@ button{
 }
 .proects__list-item{
     background: url(../images/project.png) no-repeat;
-    max-width: 50px;
-    width: 100%;
+    width: 141px;
+    width: calc(100% / 6);
     height: 50px;
     padding-left: 70px;
+    margin-bottom: 30px;
     
 
 }
@@ -184,7 +210,8 @@ button{
 }
 .proects__list{
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    justify-content: space-around;
     
    
 }
@@ -200,7 +227,12 @@ button{
     width: 100%;
 }
 .accent__description{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
     margin-bottom: 10px;
+    text-align: start
 }
 .accent__sm{
     max-width: 350px;
@@ -250,7 +282,9 @@ button{
     margin-bottom: 50px;
 }
 .work__description{
-    margin-bottom: 57px;
+    max-width: 540px;
+    width: 100%;
+    padding-bottom: 57px;
 }
 .work__description{
   text-align: center;
@@ -260,13 +294,15 @@ button{
 .foto__item-paper{
     background-image: url(../images/Rectangle.png);
     background-size: cover;
-    width: 480px;
+    max-width: 480px;
+    width: 100%;
     height: 480px;
 }
 .foto__item-mac{
     background-image: url(../images/Rectanglebook.png);
     background-size: cover;
-    width: 480px;
+    max-width: 480px;
+    width: 100%;
     height: 480px;
 }
 .foto-paper-mac{
@@ -297,6 +333,7 @@ button{
 }
 .microsoft{
    display: flex;
+   flex-wrap: wrap;
    justify-content: space-around;
     align-items: center;
 }
@@ -312,6 +349,8 @@ button{
 }
 .form-group-description{
     margin-bottom: 65px;
+    max-width: 540px;
+    width: 100%;
 }
 .form{
     display: flex;
@@ -379,3 +418,47 @@ button{
 
 
 
+@media screen and (max-width:1360px){
+    .container{
+        width: 90%;
+    }
+    .header__container{
+        justify-content: space-around;
+    }
+    .work__video{
+        width: 80%;
+    }
+    .hero__description{
+        width: 80%;
+    }
+   .skills__item{
+    align-items: center;
+    padding-bottom: 30px;
+   }
+}
+@media screen and (max-width:1070px){
+    .hero__design{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .hero__mac__item-link {
+        padding: 50px;
+    }
+    .proects__list-item{
+        width: calc(100% / 3);
+    }
+}
+@media screen and (max-width:600px){
+    .proects__list-item{
+        width: calc(100% / 2);
+    }
+    .label-form{
+        max-width: 540px;
+        width: 100%;
+    }
+    .label-form:not(:last-child){
+        margin-bottom: 35px;
+    }
+    
+}
