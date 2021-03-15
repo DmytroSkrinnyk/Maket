@@ -62,11 +62,7 @@ button{
     border: none;
 }
 
-.description{
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 16px;
+.description{  
     line-height: 26px;
     text-align: center;
     color: #727272;
@@ -75,8 +71,6 @@ button{
     
 }
 .title{
-    font-family: Roboto;
-    font-style: normal;
     font-weight: 500;
     font-size: 32px;
     line-height: 37px;
@@ -129,17 +123,12 @@ button{
     text-align: start;
 }
 .hero__description{
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 16px;
     line-height: 26px;
     color: #727272;
     max-width: 540px;
     width: 100%;
 }
 .hero__design{
-    margin-left: 40px;
     display: flex;
     flex-direction: column;
 
@@ -160,8 +149,6 @@ button{
     margin-bottom: 100px;
 }
 .about__me-title{
-    font-family: Roboto;
-    font-style: normal;
     font-weight: 500;
     margin-bottom: 50px;
 }
@@ -171,41 +158,28 @@ button{
     width: 100%;
     text-align: center;
 }
-/* proects */
-.proects{
+/* project */
+.project{
     background: #34547A;
     color:#ffffff;
     padding: 100px 0 100px;
 }
-.proects__list-item{
+.project__list-item{
     background: url(../images/project.png) no-repeat;
-    width: 141px;
     width: calc(100% / 6);
     height: 50px;
     padding-left: 70px;
-    margin-bottom: 30px;
-    
-
 }
-.proects__title{
-    font-family: Roboto;
-    font-style: normal;
+.project__title{
     font-weight: 500;
     font-size: 21px;
     margin-bottom: 10px;
 }
-.proects__description{
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 16px;
-}
-.proects__list{
+
+.project__list{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
-    
-   
+    justify-content: space-around;    
 }
 /* accent */
 .accent__b{
@@ -219,24 +193,19 @@ button{
     width: 100%;
 }
 .accent__description{
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 16px;
     margin-bottom: 10px;
-    text-align: start
+    text-align: start;
+    color: #727272;
 }
 .accent__sm{
     max-width: 350px;
     width: 75%;
     height: 4px;
     background: #34547A;
-    transform: rotate(-0.06deg);
 }
 .accent__face-foto{
     max-width: 555px;
     width: 100%;
-   
 }
 .accent__face{
     max-width: 555px;
@@ -266,9 +235,6 @@ button{
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
-    
-    
-
 }
 .work__title{
     margin-bottom: 50px;
@@ -281,45 +247,45 @@ button{
 .work__description{
   text-align: center;
 }
-/* foto */
+/* photo */
 
-.foto__item-paper{
+.photo__item-paper{
     background-image: url(../images/Rectangle.png);
     background-size: cover;
     max-width: 480px;
     width: 100%;
     height: 480px;
 }
-.foto__item-mac{
+.photo__item-mac{
     background-image: url(../images/Rectanglebook.png);
     background-size: cover;
     max-width: 480px;
     width: 100%;
     height: 480px;
 }
-.foto-paper-mac{
+.photo-paper-mac{
     display: flex;
     flex-wrap: wrap;
-    flex: 480px 1 1;
+    flex: 1 1 480px;
     justify-content: center;
     
 }
 
-.foto__item-paper:hover{
+.photo__item-paper:hover{
     background:url(../images/view.png) no-repeat center,
     linear-gradient(0deg, rgba(52, 84, 122, 0.8), rgba(52, 84, 122, 0.8)), 
     url(../images/Rectangle.png) center/cover;
     
     
 }
-.foto__item-mac:hover{
+.photo__item-mac:hover{
     background:url(../images/view.png) no-repeat center,
     linear-gradient(0deg, rgba(52, 84, 122, 0.8), rgba(52, 84, 122, 0.8)), 
     url(../images/Rectanglebook.png) center/cover;
     
    
 }
-.foto-paper-mac-bottom{
+.photo-paper-mac-bottom{
     display: flex;
     margin-top: 0;
 }
@@ -377,6 +343,7 @@ button{
     color: #ffffff;
     margin: 0 auto;
     margin-top: 50px;
+    border: none;
 
 }
 .form-btn:hover{
@@ -392,13 +359,12 @@ button{
 }
 .footer__ns{
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
     color: #ffffff;
 }
 .footer__name-title{
-    font-family: Roboto;
-    font-style: normal;
     font-weight: 500;
     font-size: 21px;
     margin-bottom: 20px;
@@ -440,7 +406,7 @@ button{
         margin-bottom: 30px;
         margin-left: 35px;
     }
-    .proects__list-item{
+    .project__list-item{
         width: calc(100% / 3);
     }
 }
@@ -454,7 +420,7 @@ button{
         flex-direction: column;
         row-gap: 40px;
     }
-    .proects__list-item{
+    .project__list-item{
         width: calc(100% / 2);
     }
     .label-form{
@@ -470,5 +436,15 @@ button{
     }
     .form-textarea{
         margin-top: 0;
+    }
+    .footer__social{
+        margin-top: 30px;
+
+    }
+}
+@media screen and (max-width:400px){
+    .hero__mac__item-link{
+        margin-left: 0;
+        width: 90%;
     }
 }
